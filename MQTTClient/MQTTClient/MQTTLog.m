@@ -12,16 +12,16 @@
 
 #ifdef DEBUG
 
-DDLogLevel ddLogLevel = DDLogLevelVerbose;
+DDLogLevel ddLogLevelX = DDLogLevelVerbose;
 
 #else
 
-DDLogLevel ddLogLevel = DDLogLevelWarning;
+DDLogLevel ddLogLevelX = DDLogLevelWarning;
 
 #endif
 
 + (void)setLogLevel:(DDLogLevel)logLevel {
-    ddLogLevel = logLevel;
+    ddLogLevelX = logLevel;
 }
 
 @end
